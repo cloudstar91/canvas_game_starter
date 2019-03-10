@@ -32,9 +32,7 @@ function sound(src) {
   }
 }
 
-
 myMusic = new sound("MarioBros.mp4");
-
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -107,8 +105,8 @@ function loadImages() {
     obstacle4Ready = true;
   };
   obstacle4Image.src = "images/knife.png";
-
 }
+
 ctx.font = "20px Georgia";
 ctx.font = "30px Verdana";
 
@@ -164,14 +162,12 @@ function setupKeyboardListeners() {
   }, false);
 }
 
-
 /**
  *  Update game objects - change player position based on key pressed
  *  and check to see if the monster has been caught!
  *  
  *  If you change the value of 5, the player will move at a different rate.
  */
-
 
 let update = function () {
 
@@ -215,8 +211,6 @@ let update = function () {
   ) {
     counter++;
 
-
-
     // Pick a new location for the monster.
     // Note: Change this to place the monster at a new, random location.
     function getRandomInt(min, max) {
@@ -256,11 +250,9 @@ let update = function () {
     && counter >= 15) {
     gameOver = true;
   }
-
   if (timeleft == 0) {
     gameOver = true;
   }
-
 };
 
 /**
@@ -341,7 +333,6 @@ var render = function () {
     ctx.fillText(`Score:${counter}`, 10, 50);
   }
   ctx.fillText(`Timer: ${timeleft}`, 350, 50);
-
 };
 
 /**
@@ -350,7 +341,6 @@ var render = function () {
  * render (based on the state of our game, draw the right things)
  */
 var main = function () {
-
 
   myMusic.play(); // fix later
   update();
