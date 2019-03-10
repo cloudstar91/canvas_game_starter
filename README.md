@@ -13,7 +13,7 @@ This game has 2 levels. Instructions:
 Level 1: you will catch 12 eggs in 30 seconds to win
 Level 2: you will catch 15 eggs in 30 seconds and stay away form obstacles (bomb) to win.
 
-<!-- Note: because the bomb will randomly relocated, in case it relocates right on your current position, you will lose. You need some lucks to play it as well =]]  -->
+Note: because the bomb will randomly relocated, in case it relocates right on your current position, you will lose. You need lucks to play it as  =]]  -->
 
 ## Video Walkthrough
 
