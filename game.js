@@ -80,11 +80,7 @@ function getRandomImage() {
   var num = Math.floor(Math.random() * (img.length - 1));
 
   eggImage.src = "images/eggFolder/" + img[num];
-
-  // show the egg image
 }
-
-//random color
 
 /** 
  * Setting up our characters.
@@ -141,6 +137,7 @@ function setupKeyboardListeners() {
  *
  *  If you change the value of 5, the player will move at a different rate.
  */
+
 let update = function() {
   if (38 in keysDown) {
     // Player is holding up key
@@ -191,6 +188,7 @@ let update = function() {
 /**
  * This function, render, runs as often as possible.
  */
+
 var render = function() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   if (bgReady) {
@@ -296,7 +294,6 @@ function getTimeRemaining(endtime) {
 
   return {
     total: t,
-
     seconds: seconds
   };
 }
@@ -328,12 +325,14 @@ backgroundMusic = document.getElementById("myBgMusic");
 function playAudio() {
   myBgMusic.play();
 }
+
 let volOnBtn = document.getElementById("volOn");
 volOnBtn.addEventListener("click", playAudio);
 
 function pauseAudio() {
   myBgMusic.pause();
 }
+
 let volOffBtn = document.getElementById("volOff");
 volOffBtn.addEventListener("click", pauseAudio);
 
