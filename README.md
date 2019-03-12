@@ -64,7 +64,7 @@ Time spent: 24hr hours spent in total.
 
 Challenges:
 - Time CountDown
-- Fixing bugs
+- Make sure game starts/Time starts after player submit name.
 
 ## License
 
